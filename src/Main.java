@@ -16,10 +16,14 @@ public class Main {
         double quantidadeHorasNormais = 335.0;
         double quantidadeHorasExtras = 44.0;
 
-        double totalSalario = folha.calcularSalario(quantidadeHorasNormais,
-                quantidadeHorasExtras, contrato);
+        Holerite holerite = folha.calcularSalario(
+                quantidadeHorasNormais,
+                quantidadeHorasExtras,
+                contrato);
 
-        System.out.println("O salário foi de " + totalSalario);
+        holerite.imprimir();
+
+
 
     }
 }
